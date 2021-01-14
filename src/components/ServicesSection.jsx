@@ -11,7 +11,7 @@ import home2 from "../img/home2.png";
 
 //Syles
 import styled from "styled-components";
-import { BasicLayout, Description, Image, Hide } from "../styles";
+import { BasicLayout, Description, Image } from "../styles";
 
 const ServicesSection = () => {
   return (

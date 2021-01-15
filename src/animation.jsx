@@ -50,7 +50,8 @@ export const photoAnimation = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.75,
+      duration: 1,
+      delay: 0.5,
     },
   },
 };
@@ -71,6 +72,7 @@ export const sliderAnimation = {
     x: "100%",
     skew: "0deg",
     transition: {
+      type: "tween",
       ease: "easeOut",
       duration: 1,
     },
@@ -84,6 +86,24 @@ export const sliderContainer = {
     transition: {
       staggerChildren: 0.15,
       ease: "easeOut",
+      duration: 1,
+    },
+  },
+};
+
+export const scrollReveal = {
+  hidden: {
+    opacity: 0,
+    scale: 1.2,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
     },
   },
 };

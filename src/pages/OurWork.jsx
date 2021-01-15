@@ -21,6 +21,7 @@ import {
   sliderAnimation,
   sliderContainer,
 } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   return (
@@ -62,6 +63,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="Good Times" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };

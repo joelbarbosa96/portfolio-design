@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
@@ -28,11 +29,11 @@ function App() {
           <Route path="/work" exact>
             <OurWork />
           </Route>
-          <Route>
-            <MovieDetails path="/work/:id" />
-          </Route>
           <Route path="/contact">
             <ContactUs />
+          </Route>
+          <Route>
+            <MovieDetails path="/work/:id" />
           </Route>
         </Switch>
       </AnimatePresence>
